@@ -6,57 +6,68 @@ class clothing {
         System.out.println();
 
         //Short sleeve shirt
-        shirts sshirts = new shirts();
-        sshirts.size = 10;
-        sshirts.style = "short";
-        sshirts.price = 20;
-        sshirts.colorful = true;
-        sshirts.describe();
+        shirts shortshirts = new shirts();
+        shortshirts.size = 10;
+        shortshirts.style = "short";
+        shortshirts.price = 20;
+        shortshirts.colorful = true;
+        shortshirts.describe();
 
         System.out.println(" ");
 
         //Long sleeve
-        shirts lshirts = new shirts();
-        lshirts.size = 18;
-        lshirts.style = "long";
-        lshirts.price = 15;
-        lshirts.colorful = true;
-        lshirts.describe();
+        shirts longshirts = new shirts();
+        longshirts.size = 18;
+        longshirts.style = "long";
+        longshirts.price = 15;
+        longshirts.colorful = true;
+        longshirts.describe();
 
         System.out.println(" ");
 
         //Dress Shirt
-        shirts dshirts = new shirts();
-        dshirts.size = 24;
-        dshirts.style = "dress";
-        dshirts.price = 36;
-        dshirts.colorful = false;
-        dshirts.describe();
+        shirts dressshirts = new shirts();
+        dressshirts.size = 24;
+        dressshirts.style = "dress";
+        dressshirts.price = 36;
+        dressshirts.colorful = false;
+        dressshirts.describe();
 
         System.out.println(" ");
 
         //Tank Top
-        shirts tshirts = new shirts();
-        tshirts.size = 14;
-        tshirts.style = "Tank-Top";
-        tshirts.price = 5;
-        tshirts.colorful = false;
-        tshirts.describe();
+        shirts tankshirts = new shirts();
+        tankshirts.size = 14;
+        tankshirts.style = "Tank-Top";
+        tankshirts.price = 5;
+        tankshirts.colorful = false;
+        tankshirts.describe();
 
         System.out.println(" ");
 
         //Jersey
-        shirts jshirts = new shirts();
-        jshirts.size = 20;
-        jshirts.style = "Jersey";
-        jshirts.price = 100;
-        jshirts.colorful = true;
-        jshirts.describe();
+        shirts jerseyshirts = new shirts();
+        jerseyshirts.size = 20;
+        jerseyshirts.style = "Jersey";
+        jerseyshirts.price = 100;
+        jerseyshirts.colorful = true;
+        jerseyshirts.describe();
+
+        System.out.println(" ");
+
+        //Tunic
+        shirts tunicshirts = new shirts();
+        tunicshirts.size = 25;
+        tunicshirts.style = "Tunic";
+        tunicshirts.price = 30;
+        tunicshirts.colorful = true;
+        tunicshirts.describe();
 
         System.out.println(" ");
 
         System.out.println("Do you want to buy any shirts?");
-        jshirts.purchase();
+        jerseyshirts.purchase();
+        tunicshirts.purchase();
 
         System.out.println(" ");
 
