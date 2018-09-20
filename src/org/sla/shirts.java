@@ -31,7 +31,7 @@ public class shirts {
 
     void purchase() {
        if (!purchased) {
-           System.out.println("Gracias for buying this!");
+           System.out.println("Gracias for buying this" + style + "!");
            purchased = true;
        }
     }
