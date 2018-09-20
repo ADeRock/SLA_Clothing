@@ -126,5 +126,18 @@ class clothing {
         sneaker.purchase();
         System.out.println(" ");
         slipper.purchase();
+
+        shoes[] shoes = {toeshoe, flipflop, slipper, sneaker, snowshoe, snowshoe};
+        int highestShoeCost = 0;
+        shoes mostExpensiveShoe = shoes[0];
+
+        for (int i = 0; i < shoes.length; i++) {
+            if (shoes[i].getPrice() >= highestShoeCost) {
+                highestShoeCost = shoes[i].getPrice();
+                mostExpensiveShoe = shoes[i];
+            }
+        }
+
+        System.out.println("Most expensive shoe is " + mostExpensiveShoe.style);
     }
 }
