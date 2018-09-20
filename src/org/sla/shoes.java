@@ -33,7 +33,7 @@ public class shoes {
 
     void purchase() {
         if (!purchased) {
-            System.out.println("Thank you!");
+            System.out.println("Thank you for purchasing the " + style +  "!");
             purchased = true;
         }
     }
