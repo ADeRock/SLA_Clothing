@@ -139,5 +139,18 @@ class clothing {
         }
 
         System.out.println("Most expensive shoe is " + mostExpensiveShoe.style);
+
+        shirts[] shirts = {shortshirts, longshirts, tunicshirts, jerseyshirts, tankshirts, dressshirts};
+        int highestShirtCost = 0;
+        shirts mostExpensiveShirt = shirts[0];
+
+        for (int i = 0; i < shirts.length; i++) {
+            if (shirts[i].getPrice() >= highestShirtCost) {
+                highestShirtCost = shirts[i].getPrice();
+                mostExpensiveShirt = shirts[i];
+            }
+        }
+
+        System.out.println("Most expensive shirt is " + mostExpensiveShirt.style);
     }
 }
