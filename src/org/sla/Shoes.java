@@ -1,6 +1,6 @@
 package org.sla;
 
-public class shoes extends clothing{
+public class Shoes extends Clothing {
 
 
     void describe() {

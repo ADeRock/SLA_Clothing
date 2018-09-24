@@ -1,6 +1,6 @@
 package org.sla;
 
-public class clothing {
+public class Clothing {
     int size;
     String style;
     int price;

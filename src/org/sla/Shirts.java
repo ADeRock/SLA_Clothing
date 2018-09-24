@@ -1,6 +1,6 @@
 package org.sla;
 
-public class shirts extends clothing{
+public class Shirts extends Clothing {
     void describe() {
         System.out.println("This size " + getSize() + " Shirt is $" + getPrice());
         if (colorful) {
