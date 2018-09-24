@@ -1,20 +1,6 @@
 package org.sla;
 
-public class shirts {
-    int size;
-    String style;
-    int price;
-    boolean colorful;
-    boolean purchased = false;
-
-    int getSize() {
-        return size;
-    }
-
-    int getPrice() {
-        return price;
-    }
-
+public class shirts extends clothing{
     void describe() {
         System.out.println("This size " + getSize() + " Shirt is $" + getPrice());
         if (colorful) {

@@ -1,19 +1,7 @@
 package org.sla;
 
-public class shoes {
-    int size;
-    String style;
-    int price;
-    boolean colorful;
-    boolean purchased = false;
+public class shoes extends clothing{
 
-    int getSize() {
-        return size;
-    }
-
-    int getPrice() {
-        return price;
-    }
 
     void describe() {
         System.out.println("This size " + getSize() + " shoe is $" + getPrice());
