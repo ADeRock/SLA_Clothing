@@ -14,5 +14,4 @@ public class clothing {
     int getPrice() {
         return price;
     }
-
 }
