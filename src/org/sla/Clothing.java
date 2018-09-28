@@ -7,11 +7,12 @@ public class Clothing {
     private boolean colorful;
     private boolean purchased = false;
 
-    Clothing (int size, String style) {
-        age = theAge;
-        name = theName;
-        petType = thePetType;
-        eatsDryFood = eatsWhat;
+    Clothing (int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased) {
+        size = ourSize;
+        style = ourStyle;
+        price = ourPrice;
+        colorful = isColorful;
+        purchased = isPurchased;
     }
 
     int getSize() {
