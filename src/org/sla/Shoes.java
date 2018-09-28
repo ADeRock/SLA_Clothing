@@ -10,13 +10,13 @@ public class Shoes extends Clothing {
 
         System.out.println("This size " + getSize() + " shoe is $" + getPrice());
 
-        if (colorful) {
+        if (getColourful()) {
             System.out.println("This is very colorful.");
         }
 
-        System.out.println("The style is " + style);
+        System.out.println("The style is " + getStyle());
 
-        if (purchased) {
+        if (getPurchased()) {
             System.out.println("This item has been bought.");
         } else {
             System.out.println("This item has not been bought.");
@@ -24,9 +24,9 @@ public class Shoes extends Clothing {
     }
 
     void purchase() {
-        if (!purchased) {
-            System.out.println("Thank you for purchasing the " + style +  "!");
-            purchased = true;
+        if (!getPurchased()) {
+            System.out.println("Thank you for purchasing the " + getStyle() +  "!");
+            setPurchased(true);
         }
     }
 

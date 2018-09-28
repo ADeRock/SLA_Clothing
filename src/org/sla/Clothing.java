@@ -5,7 +5,7 @@ public class Clothing {
     private String style;
     private int price;
     private boolean colorful;
-    private boolean purchased = false;
+    private boolean purchased;
 
     Clothing (int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased) {
         size = ourSize;
@@ -13,6 +13,10 @@ public class Clothing {
         price = ourPrice;
         colorful = isColorful;
         purchased = isPurchased;
+    }
+
+    void setPurchased(boolean purchase) {
+        purchased = purchase;
     }
 
     boolean getColourful() {
