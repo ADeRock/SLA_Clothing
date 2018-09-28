@@ -32,8 +32,6 @@ class Main {
         System.out.println(" ");
 
         System.out.println("Do you want to buy any Shirts?");
-        jerseyshirts.purchase();
-        tunicshirts.purchase();
 
         System.out.println(" ");
 
@@ -49,14 +47,6 @@ class Main {
         clothing[9] = new Shoes(12, "Sneaker", 100, false, false);
 
         clothing[10] = new Shoes(10, "Snow Shoe", 120, true, false);
-
-        System.out.println("Do you want to buy any Shoes?");
-        System.out.println(" ");
-        clothing[6].purchase();
-        System.out.println(" ");
-        sneaker.purchase();
-        System.out.println(" ");
-        slipper.purchase();
 
         System.out.println("Describe Yourself");
         for (int i = 0; i < 11; i++) {
