@@ -24,7 +24,6 @@ class Main {
 
         clothing[5] = new Shirts(25, "Tunic", 30, true, false);
 
-        System.out.println("Describe Yourself");
         for (int i = 0; i < 5; i++) {
             clothing[i].describe();
             System.out.println(" ");
@@ -54,7 +53,7 @@ class Main {
             System.out.println(" ");
         }
 
-        System.out.println("Do you want to buy any Shirts?");
+        System.out.println("Do you want to buy any Shoes?");
         clothing[7].purchase();
         System.out.println(" ");
         clothing[10].purchase();
