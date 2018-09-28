@@ -80,64 +80,19 @@ class Main {
         System.out.println("Here is our selection of Shoes:");
         System.out.println(" ");
 
-        clothing[6] = new Shirts(10, "short", 20, true, false);
+        clothing[6] = new Shoes(10, "Toe Shoe", 40, false, false);
 
-        Shoes toeshoe = new Shoes();
-        toeshoe.size = 10;
-        toeshoe.style = "Toe Shoe";
-        toeshoe.price = 40;
-        toeshoe.colorful = false;
-        toeshoe.describe();
+        clothing[7] = new Shoes(8, "Flip Flop", 5, true, false);
 
-        System.out.println(" ");
+        clothing[8] = new Shoes(10, "Slipper", 20, true, false);
 
-        clothing[7] = new Shirts(10, "short", 20, true, false);
+        clothing[9] = new Shoes(12, "Sneaker", 100, false, false);
 
-        Shoes flipflop = new Shoes();
-        flipflop.size = 8;
-        flipflop.style = "Flip Flop";
-        flipflop.price = 5;
-        flipflop.colorful = true;
-        flipflop.describe();
-
-        System.out.println(" ");
-
-        clothing[8] = new Shirts(10, "short", 20, true, false);
-
-        Shoes slipper = new Shoes();
-        slipper.size = 7;
-        slipper.style = "Slipper";
-        slipper.price = 20;
-        slipper.colorful = true;
-        slipper.describe();
-
-        System.out.println(" ");
-
-        clothing[9] = new Shirts(10, "short", 20, true, false);
-
-        Shoes sneaker = new Shoes();
-        sneaker.size = 12;
-        sneaker.style = "Sneaker";
-        sneaker.price = 100;
-        sneaker.colorful = false;
-        sneaker.describe();
-
-        System.out.println(" ");
-
-        clothing[10] = new Shirts(10, "short", 20, true, false);
-
-        Shoes snowshoe = new Shoes();
-        snowshoe.size = 10;
-        snowshoe.style = "Snow Shoe";
-        snowshoe.price = 120;
-        snowshoe.colorful = true;
-        snowshoe.describe();
-
-        System.out.println(" ");
+        clothing[10] = new Shoes(10, "Snow Shoe", 120, true, false);
 
         System.out.println("Do you want to buy any Shoes?");
         System.out.println(" ");
-        toeshoe.purchase();
+        clothing[6].purchase();
         System.out.println(" ");
         sneaker.purchase();
         System.out.println(" ");

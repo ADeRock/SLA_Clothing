@@ -15,6 +15,14 @@ public class Clothing {
         purchased = isPurchased;
     }
 
+    void describe() {
+
+    }
+
+    void purchase() {
+
+    }
+
     void setPurchased(boolean purchase) {
         purchased = purchase;
     }
