@@ -2,7 +2,7 @@ package org.sla;
 
 class Main {
     public static void main(String[] args) {
-        System.out.println("Here is our selection of Shirts");
+        System.out.println("Here is our selection of Shirts:");
         System.out.println();
 
         Clothing[] clothing = new Clothing[11];

@@ -6,6 +6,7 @@ public class Clothing {
     private int price;
     private boolean colorful;
     private boolean purchased;
+    private String clothingType;
 
     Clothing (int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased) {
         size = ourSize;
@@ -13,6 +14,7 @@ public class Clothing {
         price = ourPrice;
         colorful = isColorful;
         purchased = isPurchased;
+        clothingType = "clothing";
     }
 
     void describe() {
@@ -36,7 +38,7 @@ public class Clothing {
     }
 
     String getStyle() {
-        return style;
+        return style + " " + clothingType;
     }
 
     int getSize() {
