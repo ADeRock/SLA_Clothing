@@ -1,11 +1,18 @@
 package org.sla;
 
 public class Clothing {
-    int size;
-    String style;
-    int price;
-    boolean colorful;
-    boolean purchased = false;
+    private int size;
+    private String style;
+    private int price;
+    private boolean colorful;
+    private boolean purchased = false;
+
+    Clothing (int size, String style) {
+        age = theAge;
+        name = theName;
+        petType = thePetType;
+        eatsDryFood = eatsWhat;
+    }
 
     int getSize() {
         return size;
@@ -14,4 +21,5 @@ public class Clothing {
     int getPrice() {
         return price;
     }
+
 }
