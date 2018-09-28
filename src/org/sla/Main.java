@@ -37,7 +37,6 @@ class Main {
         System.out.println(" ");
 
         System.out.println("Here is our selection of Shoes:");
-        System.out.println(" ");
 
         clothing[6] = new Shoes(10, "Toe Shoe", 40, false, false);
 
@@ -50,8 +49,14 @@ class Main {
         clothing[10] = new Shoes(10, "Snow Shoe", 120, true, false);
 
         System.out.println("Describe Yourself");
-        for (int i = 0; i < 11; i++) {
+        for (int i = 6; i < 11; i++) {
             clothing[i].describe();
+            System.out.println(" ");
         }
+
+        System.out.println("Do you want to buy any Shirts?");
+        clothing[7].purchase();
+        System.out.println(" ");
+        clothing[10].purchase();
     }
 }
