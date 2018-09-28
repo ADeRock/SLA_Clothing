@@ -4,6 +4,10 @@ public class Shoes extends Clothing {
 
 
     void describe() {
+        Shoes(int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased) {
+            super(ourSize, ourStyle, ourPrice, isColorful, isPurchased)
+        }
+
         System.out.println("This size " + getSize() + " shoe is $" + getPrice());
 
         if (colorful) {

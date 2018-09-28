@@ -15,6 +15,18 @@ public class Clothing {
         purchased = isPurchased;
     }
 
+    boolean getColourful() {
+        return colorful;
+    }
+
+    boolean getPurchased() {
+        return purchased;
+    }
+
+    String getStyle() {
+        return style;
+    }
+
     int getSize() {
         return size;
     }
