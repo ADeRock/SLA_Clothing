@@ -1,14 +1,17 @@
 package org.sla;
 
 public class Shirts extends Clothing {
+    Shirts(int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased) {
+        super(ourSize, ourStyle, ourPrice, isColorful, isPurchased);
+    }
     void describe() {
         System.out.println("This size " + getSize() + " Shirt is $" + getPrice());
-        if (colorful) {
+        if (getColourful()) {
             System.out.println("This is very colorful");
 
         }
-        System.out.println("This style is " + style);
-        if (purchased) {
+        System.out.println("This style is " + getStyle());
+        if (getPurchased()) {
             System.out.println("This item has been purchased");
         }else{
             System.out.println("This item has not been purchased");
@@ -16,9 +19,9 @@ public class Shirts extends Clothing {
     }
 
     void purchase() {
-       if (!purchased) {
-           System.out.println("Gracias for buying this " + style + "!");
-           purchased = true;
+       if (!getPurchased()) {
+           System.out.println("Gracias for buying this " + getStyle() + "!");
+           setPurchased(true);
        }
     }
 }
