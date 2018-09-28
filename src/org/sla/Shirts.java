@@ -2,7 +2,7 @@ package org.sla;
 
 public class Shirts extends Clothing {
     Shirts(int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased) {
-        super(ourSize, ourStyle, ourPrice, isColorful, isPurchased);
+        super(ourSize, ourStyle, ourPrice, isColorful, isPurchased, "Shirts");
     }
     void describe() {
         System.out.println("This size " + getSize() + " Shirt is $" + getPrice());

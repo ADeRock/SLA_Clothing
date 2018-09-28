@@ -8,7 +8,7 @@ public class Clothing {
     private boolean purchased;
     private String clothingType;
 
-    Clothing (int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased) {
+    Clothing (int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased, String type) {
         size = ourSize;
         style = ourStyle;
         price = ourPrice;
@@ -24,6 +24,7 @@ public class Clothing {
     void purchase() {
 
     }
+
 
     void setPurchased(boolean purchase) {
         purchased = purchase;
