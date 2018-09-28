@@ -5,15 +5,13 @@ class Main {
         System.out.println("Here is our selection of Shirts");
         System.out.println();
 
-        //Short sleeve shirt
-        Shirts shortshirts = new Shirts();
-        shortshirts.size = 10;
-        shortshirts.style = "short";
-        shortshirts.price = 20;
-        shortshirts.colorful = true;
-        shortshirts.describe();
+        Clothing[] clothing = new Clothing[11];
+
+        clothing[0] = new Shirts(10, "short", 20, true, false);
 
         System.out.println(" ");
+
+        clothing[1] = new Shirts(10, "short", 20, true, false);
 
         //Long sleeve
         Shirts longshirts = new Shirts();
@@ -25,6 +23,8 @@ class Main {
 
         System.out.println(" ");
 
+        clothing[2] = new Shirts(10, "short", 20, true, false);
+
         //Dress Shirt
         Shirts dressshirts = new Shirts();
         dressshirts.size = 24;
@@ -34,6 +34,8 @@ class Main {
         dressshirts.describe();
 
         System.out.println(" ");
+
+        clothing[3] = new Shirts(10, "short", 20, true, false);
 
         //Tank Top
         Shirts tankshirts = new Shirts();
@@ -45,6 +47,8 @@ class Main {
 
         System.out.println(" ");
 
+        clothing[4] = new Shirts(10, "short", 20, true, false);
+
         //Jersey
         Shirts jerseyshirts = new Shirts();
         jerseyshirts.size = 20;
@@ -54,6 +58,8 @@ class Main {
         jerseyshirts.describe();
 
         System.out.println(" ");
+
+        clothing[5] = new Shirts(10, "short", 20, true, false);
 
         //Tunic
         Shirts tunicshirts = new Shirts();
@@ -74,6 +80,8 @@ class Main {
         System.out.println("Here is our selection of Shoes:");
         System.out.println(" ");
 
+        clothing[6] = new Shirts(10, "short", 20, true, false);
+
         Shoes toeshoe = new Shoes();
         toeshoe.size = 10;
         toeshoe.style = "Toe Shoe";
@@ -82,6 +90,8 @@ class Main {
         toeshoe.describe();
 
         System.out.println(" ");
+
+        clothing[7] = new Shirts(10, "short", 20, true, false);
 
         Shoes flipflop = new Shoes();
         flipflop.size = 8;
@@ -92,6 +102,8 @@ class Main {
 
         System.out.println(" ");
 
+        clothing[8] = new Shirts(10, "short", 20, true, false);
+
         Shoes slipper = new Shoes();
         slipper.size = 7;
         slipper.style = "Slipper";
@@ -101,6 +113,8 @@ class Main {
 
         System.out.println(" ");
 
+        clothing[9] = new Shirts(10, "short", 20, true, false);
+
         Shoes sneaker = new Shoes();
         sneaker.size = 12;
         sneaker.style = "Sneaker";
@@ -109,6 +123,8 @@ class Main {
         sneaker.describe();
 
         System.out.println(" ");
+
+        clothing[10] = new Shirts(10, "short", 20, true, false);
 
         Shoes snowshoe = new Shoes();
         snowshoe.size = 10;
@@ -126,31 +142,5 @@ class Main {
         sneaker.purchase();
         System.out.println(" ");
         slipper.purchase();
-
-        Shoes[] shoes = {toeshoe, flipflop, slipper, sneaker, snowshoe, snowshoe};
-        int highestShoeCost = 0;
-        Shoes mostExpensiveShoe = shoes[0];
-
-        for (int i = 0; i < shoes.length; i++) {
-            if (shoes[i].getPrice() >= highestShoeCost) {
-                highestShoeCost = shoes[i].getPrice();
-                mostExpensiveShoe = shoes[i];
-            }
-        }
-
-        System.out.println("Most expensive shoe is " + mostExpensiveShoe.style);
-
-        Shirts[] shirts = {shortshirts, longshirts, tunicshirts, jerseyshirts, tankshirts, dressshirts};
-        int highestShirtCost = 0;
-        Shirts mostExpensiveShirt = shirts[0];
-
-        for (int i = 0; i < shirts.length; i++) {
-            if (shirts[i].getPrice() >= highestShirtCost) {
-                highestShirtCost = shirts[i].getPrice();
-                mostExpensiveShirt = shirts[i];
-            }
-        }
-
-        System.out.println("Most expensive shirt is " + mostExpensiveShirt.style);
     }
 }
