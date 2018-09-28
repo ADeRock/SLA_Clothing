@@ -2,12 +2,12 @@ package org.sla;
 
 public class Shoes extends Clothing {
 
+    Shoes(int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased) {
+        super(ourSize, ourStyle, ourPrice, isColorful, isPurchased);
+    }
+
 
     void describe() {
-        Shoes(int ourSize, String ourStyle, int ourPrice, boolean isColorful, boolean isPurchased) {
-            super(ourSize, ourStyle, ourPrice, isColorful, isPurchased)
-        }
-
         System.out.println("This size " + getSize() + " shoe is $" + getPrice());
 
         if (getColourful()) {
