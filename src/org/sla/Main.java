@@ -9,29 +9,30 @@ class Main {
 
         clothing[0] = new Shirts(10, "short", 20, true, false);
 
-        System.out.println(" ");
 
         clothing[1] = new Shirts(18, "long", 15, true, false);
 
-        System.out.println(" ");
 
         clothing[2] = new Shirts(24, "dress", 36, false, false);
 
-        System.out.println(" ");
 
         clothing[3] = new Shirts(14, "Tank-Top", 5, false, false);
 
-        System.out.println(" ");
 
         clothing[4] = new Shirts(20, "Jersey", 100, true, false);
 
-        System.out.println(" ");
 
         clothing[5] = new Shirts(25, "Tunic", 30, true, false);
 
-        System.out.println(" ");
+        System.out.println("Describe Yourself");
+        for (int i = 0; i < 5; i++) {
+            clothing[i].describe();
+            System.out.println(" ");
+        }
+
 
         System.out.println("Do you want to buy any Shirts?");
+        clothing[4].purchase();
 
         System.out.println(" ");
 
