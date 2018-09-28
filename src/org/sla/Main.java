@@ -11,63 +11,23 @@ class Main {
 
         System.out.println(" ");
 
-        clothing[1] = new Shirts(10, "short", 20, true, false);
-
-        //Long sleeve
-        Shirts longshirts = new Shirts();
-        longshirts.size = 18;
-        longshirts.style = "long";
-        longshirts.price = 15;
-        longshirts.colorful = true;
-        longshirts.describe();
+        clothing[1] = new Shirts(18, "long", 15, true, false);
 
         System.out.println(" ");
 
-        clothing[2] = new Shirts(10, "short", 20, true, false);
-
-        //Dress Shirt
-        Shirts dressshirts = new Shirts();
-        dressshirts.size = 24;
-        dressshirts.style = "dress";
-        dressshirts.price = 36;
-        dressshirts.colorful = false;
-        dressshirts.describe();
+        clothing[2] = new Shirts(24, "dress", 36, false, false);
 
         System.out.println(" ");
 
-        clothing[3] = new Shirts(10, "short", 20, true, false);
-
-        //Tank Top
-        Shirts tankshirts = new Shirts();
-        tankshirts.size = 14;
-        tankshirts.style = "Tank-Top";
-        tankshirts.price = 5;
-        tankshirts.colorful = false;
-        tankshirts.describe();
+        clothing[3] = new Shirts(14, "Tank-Top", 5, false, false);
 
         System.out.println(" ");
 
-        clothing[4] = new Shirts(10, "short", 20, true, false);
-
-        //Jersey
-        Shirts jerseyshirts = new Shirts();
-        jerseyshirts.size = 20;
-        jerseyshirts.style = "Jersey";
-        jerseyshirts.price = 100;
-        jerseyshirts.colorful = true;
-        jerseyshirts.describe();
+        clothing[4] = new Shirts(20, "Jersey", 100, true, false);
 
         System.out.println(" ");
 
-        clothing[5] = new Shirts(10, "short", 20, true, false);
-
-        //Tunic
-        Shirts tunicshirts = new Shirts();
-        tunicshirts.size = 25;
-        tunicshirts.style = "Tunic";
-        tunicshirts.price = 30;
-        tunicshirts.colorful = true;
-        tunicshirts.describe();
+        clothing[5] = new Shirts(25, "Tunic", 30, true, false);
 
         System.out.println(" ");
 
@@ -97,5 +57,10 @@ class Main {
         sneaker.purchase();
         System.out.println(" ");
         slipper.purchase();
+
+        System.out.println("Describe Yourself");
+        for (int i = 0; i < 11; i++) {
+            clothing[i].describe();
+        }
     }
 }
